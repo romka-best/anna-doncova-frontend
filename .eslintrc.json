@@ -1,3 +1,15 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": ["next/core-web-vitals", "prettier", "plugin:prettier/recommended"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["."],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
 }
