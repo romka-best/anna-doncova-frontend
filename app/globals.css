@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --PhoneInput-color--focus: #f707c3 !important;
+}
+
 html {
     font-size: 10px;
 
@@ -14,6 +18,11 @@ body {
     background: #040413;
 
     overflow-x: hidden;
+}
+
+select {
+    color: #fff;
+    background-color: #393939;
 }
 
 .underline-short::after {

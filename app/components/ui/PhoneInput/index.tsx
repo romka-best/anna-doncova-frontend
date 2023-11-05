@@ -31,7 +31,7 @@ const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(({ className, h
             <PhoneInputWithCountrySelect
                 // @ts-ignore
                 ref={ref}
-                className={'text-lg text-white'}
+                className="text-lg text-white"
                 inputComponent={AbstractInput as any}
                 type="tel"
                 placeholder="Введите номер телефона"
