@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 
 import Lines from 'public/common/lines.svg';
 import PinkEllipseLeft from 'public/common/pink-ellipse-start-left.svg';
@@ -126,8 +125,8 @@ export default function Start() {
             <div className="absolute left-[-6rem] top-0 w-screen overflow-x-hidden">
                 <Lines className="translate-x-[-36rem]" />
             </div>
-            <Image className="absolute left-[-26rem] top-[-13rem]" src="/images/sphere.png" alt="Сфера" width="580" height="580" quality={100} />
-            <Image className="absolute right-0 top-[-10rem]" src="/images/polotno.png" alt="Полотно" width="380" height="580" quality={100} />
+            <img className="absolute left-[-26rem] top-[-13rem] h-[58rem] w-[58rem]" src="/images/sphere.png" alt="Сфера" />
+            <img className="absolute right-0 top-[-10rem] h-[58rem] w-[38rem]" src="/images/polotno.png" alt="Полотно" />
             <ButtonCircle
                 className="button button_type_circle m-auto mt-4 bg-gradient-pink hover:bg-gradient-pink-hover"
                 icon={

@@ -21,4 +21,6 @@ const AbstractInput = forwardRef<HTMLInputElement, AbstractInputProps>(({ classN
     );
 });
 
+AbstractInput.displayName = 'AbstractInput';
+
 export default AbstractInput;

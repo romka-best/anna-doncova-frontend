@@ -62,7 +62,7 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
                 setIsLoading(false);
             }
         },
-        [activities, isChecked],
+        [activities, isChecked, toNextPage],
     );
 
     if (isLoading) {
