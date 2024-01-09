@@ -27,11 +27,11 @@ export default function Start() {
                         </div>
                     </div>
                     <h1 className="relative z-10">
-                        <span className="text-5xl uppercase text-white">Курс</span>
+                        <span className="text-5xl uppercase text-white">мастер-класс</span>
                         <br />
                         <span className="gradient-white-text text-4xl uppercase">нейросети</span>
                         <br />
-                        <span className="gradient-pink-text text-3xl uppercase">в&nbsp;бизнесе</span>
+                        <span className="gradient-pink-text text-3xl uppercase">в&nbsp;жизни и&nbsp;бизнесе</span>
                     </h1>
                     <ButtonCircle
                         className="button button_type_circle relative z-10 m-auto bg-gradient-pink hover:bg-gradient-pink-hover"
@@ -69,11 +69,11 @@ export default function Start() {
                             </div>
                         </div>
                         <h1 className="relative z-10 mt-12">
-                            <span className="text-5xl uppercase text-white">Курс</span>
+                            <span className="text-5xl uppercase text-white">мастер-класс</span>
                             <br />
                             <span className="gradient-white-text text-4xl uppercase">нейросети</span>
                             <br />
-                            <span className="gradient-pink-text text-3xl uppercase">в&nbsp;бизнесе</span>
+                            <span className="gradient-pink-text text-3xl uppercase">в&nbsp;жизни и&nbsp;бизнесе</span>
                         </h1>
                     </div>
                     <div>
@@ -104,21 +104,12 @@ export default function Start() {
     return (
         <div className="relative mt-24">
             <h1 className="relative z-10">
-                <span className="text-8xl uppercase text-white">Курс</span>
+                <span className="text-8xl uppercase text-white">мастер-класс</span>
                 <br />
                 <span className="gradient-white-text text-7xl uppercase">нейросети</span>
                 <br />
-                <span className="gradient-pink-text text-6xl uppercase">в&nbsp;бизнесе</span>
+                <span className="gradient-pink-text text-6xl uppercase">в&nbsp;жизни и&nbsp;бизнесе</span>
             </h1>
-            <div className="absolute left-[45rem] top-12 z-10 flex flex-col gap-6">
-                <div className="flex w-max items-center gap-2 rounded-[2.5rem] border px-6 py-4">
-                    <SilverStarIcon />
-                    <p className="text-lg font-normal text-white">Контент сгенерирован&nbsp;ИИ</p>
-                </div>
-                <div className="flex w-max items-center rounded-[2.5rem] border px-6 py-4">
-                    <p className="text-lg font-normal text-white">Эксперт Анна Донцова</p>
-                </div>
-            </div>
             <PinkEllipseLeft className="absolute left-[-14rem] top-[-12rem]" />
             <PurpleEllipse className="absolute right-64 top-[-14rem]" />
             <PinkEllipseRight className="absolute right-[-6rem] top-[-14rem]" />

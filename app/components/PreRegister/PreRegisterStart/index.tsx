@@ -81,16 +81,15 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
             </div>
             <form className="flex flex-1 flex-col gap-10" onSubmit={handleSubmit(onSubmit)}>
                 <Input
+                    labelText="Имя"
+                    placeholder="Введите имя"
+                    hasError={Boolean(errors.name)}
+                    errorText={String(errors.name?.message)}
                     {...register('name', {
                         required: 'Имя обязательно',
                         minLength: { value: 2, message: 'Имя должно содержать минимум 2 символа' },
                         maxLength: { value: 50, message: 'Имя должно быть не больше 50 символов' },
                     })}
-                    name="name"
-                    labelText="Имя"
-                    placeholder="Введите имя"
-                    hasError={Boolean(errors.name)}
-                    errorText={String(errors.name?.message)}
                 />
                 <PhoneInput
                     hasError={Boolean(errors.phone)}
@@ -110,6 +109,20 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
                         pattern: {
                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
                             message: 'Неверный адрес электронной почты',
+                        },
+                    })}
+                />
+                <Input
+                    labelText="Никнейм в Telegram"
+                    placeholder="@username"
+                    type="text"
+                    hasError={Boolean(errors.telegram)}
+                    errorText={String(errors.telegram?.message)}
+                    {...register('telegram', {
+                        required: 'Никнейм в Telegram обязателен',
+                        pattern: {
+                            value: /^@[a-zA-Z0-9_]{4,31}$/,
+                            message: 'Неверно указан никнейм в Telegram. Пример: @username',
                         },
                     })}
                 />
