@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import Analytics from 'components/Analytics';
 import Header from 'components/Header';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
@@ -22,6 +23,7 @@ const OFFER_LINKS = [
 export default function Offer() {
     return (
         <>
+            <Analytics />
             <Header />
             <Main>
                 <h1 className="mt-8 text-center text-4xl text-white sm:text-3xl">Договор-оферта на&nbsp;услуги Донцовой А.В.</h1>
