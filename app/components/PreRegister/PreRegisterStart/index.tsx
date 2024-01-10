@@ -41,13 +41,13 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
                 return;
             }
 
+            const { telegram, ...otherData } = data;
+            const payload = telegram ? { ...otherData, telegram, activities } : { ...otherData, activities };
+
             setIsLoading(true);
 
             try {
-                const response = await api.post('/pre_register/', {
-                    ...JSON.parse(JSON.stringify(data)),
-                    activities,
-                });
+                const response = await api.post('/pre_register/', payload);
 
                 if (response.status === 201) {
                     toNextPage();
@@ -119,9 +119,8 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
                     hasError={Boolean(errors.telegram)}
                     errorText={String(errors.telegram?.message)}
                     {...register('telegram', {
-                        required: 'Никнейм в Telegram обязателен',
                         pattern: {
-                            value: /^@[a-zA-Z0-9_]{4,31}$/,
+                            value: /^@[a-zA-Z0-9_]{5,32}$/,
                             message: 'Неверно указан никнейм в Telegram. Пример: @username',
                         },
                     })}
