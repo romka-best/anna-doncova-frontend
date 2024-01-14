@@ -74,7 +74,7 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
     }
 
     return (
-        <div id="preRegisterForm" className="z-40 flex gap-12 rounded-[2.5rem] bg-[#212121] p-12 lg:flex-col sm:gap-[2.4rem] sm:p-[1.6rem]">
+        <div id="form" className="z-40 flex gap-12 rounded-[2.5rem] bg-[#212121] p-12 lg:flex-col sm:gap-[2.4rem] sm:p-[1.6rem]">
             <div className="flex flex-1 flex-col gap-8 sm:gap-[1.6rem]">
                 <h2 className="gradient-white-text text-5xl sm:text-4xl">Предзапись</h2>
                 <p className="text-3xl font-semibold text-white sm:text-xl sm:font-semibold">Получите самые выгодные условия участия!</p>
@@ -139,10 +139,13 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
                     label={
                         <p className="text-sm text-[#9D9D9D]">
                             Вы&nbsp;подтверждаете согласие с&nbsp;условиями{' '}
-                            <Link href="/offer" className="text-[#FF11E7] underline" target="_blank">
-                                Политики конфиденциальности
+                            <Link href="/privacy" className="text-[#FF11E7] underline" target="_blank">
+                                политики конфиденциальности
                             </Link>{' '}
-                            и&nbsp;офертой
+                            и&nbsp;{''}
+                            <Link href="/offer" className="text-[#FF11E7] underline" target="_blank">
+                                офертой
+                            </Link>{' '}
                         </p>
                     }
                     onChange={(checked) => {
@@ -156,7 +159,7 @@ export default function PreRegisterStart({ toNextPage }: PreRegisterStartProps) 
                     className="mt-2"
                     iconLeft={
                         <div className="relative h-[3.2rem] w-[3.2rem]">
-                            <FingerprintIcon className="fingerprint-icon fingerprint-icon_color_grey absolute" />
+                            <FingerprintIcon className="fingerprint-icon fingerprint-icon_color_pink absolute" />
                             <FingerprintIcon className="fingerprint-icon fingerprint-icon_color_white absolute" />
                         </div>
                     }

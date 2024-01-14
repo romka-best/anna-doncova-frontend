@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import Analytics from 'components/Analytics';
-import Header from 'components/Header';
-import Main from 'components/Main';
-import Footer from 'components/Footer';
+import Analytics from 'app/components/Common/Analytics';
+import Header from 'app/components/Common/Header';
+import Main from 'app/components/Common/Main';
+import Footer from 'app/components/Common/Footer';
 
 const OFFER_LINKS = [
     {

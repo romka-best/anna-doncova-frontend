@@ -14,7 +14,7 @@ export function WindowSizeProvider({ children }: { children: ReactNode }) {
     const windowSize = useWindowSize();
 
     if (!windowSize.width || !windowSize.height) {
-        return <Loading className="min-h-screen" />;
+        return <Loading isFullScreen={true} />;
     }
 
     return <WindowSizeContext.Provider value={windowSize}>{children}</WindowSizeContext.Provider>;

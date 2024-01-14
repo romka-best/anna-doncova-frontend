@@ -11,7 +11,7 @@ const AbstractInput = forwardRef<HTMLInputElement, AbstractInputProps>(({ classN
         <input
             ref={ref}
             className={cn(
-                'border-b bg-transparent py-4 text-lg text-white outline-none hover:border-[#FF11E7] focus:border-[#FF11E7]',
+                'rounded-none border-b bg-transparent py-4 text-lg text-white outline-none hover:border-[#FF11E7] focus:border-[#FF11E7]',
                 hasError ? 'border-[#FF005C]' : 'border-white',
                 className,
             )}

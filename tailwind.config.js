@@ -7,56 +7,48 @@ module.exports = {
                 '1.2rem',
                 {
                     lineHeight: '1.6rem',
-                    fontWeight: '400',
                 },
             ],
             sm: [
                 '1.4rem',
                 {
                     lineHeight: '1.8rem',
-                    fontWeight: '400',
                 },
             ],
             base: [
                 '1.4rem',
                 {
                     lineHeight: '2rem',
-                    fontWeight: '300',
                 },
             ],
             lg: [
                 '1.6rem',
                 {
                     lineHeight: '2rem',
-                    fontWeight: '300',
                 },
             ],
             xl: [
                 '1.6rem',
                 {
                     lineHeight: '2.2rem',
-                    fontWeight: '300',
                 },
             ],
             '2xl': [
                 '2rem',
                 {
                     lineHeight: '2.5rem',
-                    fontWeight: '400',
                 },
             ],
             '3xl': [
                 '2.4rem',
                 {
                     lineHeight: '3.4rem',
-                    fontWeight: '400',
                 },
             ],
             '4xl': [
                 '3.2rem',
                 {
                     lineHeight: '4rem',
-                    fontWeight: '400',
                 },
             ],
             '5xl': [
@@ -64,14 +56,12 @@ module.exports = {
                 {
                     lineHeight: '6rem',
                     letterSpacing: '0.096rem',
-                    fontWeight: '400',
                 },
             ],
             '6xl': [
                 '5.8rem',
                 {
                     lineHeight: '7.2rem',
-                    fontWeight: '500',
                 },
             ],
             '7xl': [
@@ -79,14 +69,12 @@ module.exports = {
                 {
                     lineHeight: '13.6rem',
                     letterSpacing: '0.22rem',
-                    fontWeight: '400',
                 },
             ],
             '8xl': [
                 '12.4rem',
                 {
                     lineHeight: '15.4rem',
-                    fontWeight: '400',
                 },
             ],
         },
@@ -112,6 +100,10 @@ module.exports = {
             backgroundImage: {
                 'gradient-pink': 'linear-gradient(135deg, #f707c3 10.13%, #b61cc3 51.04%, #2200f2 95.83%)',
                 'gradient-pink-hover': 'linear-gradient(135deg, #2200f2 0%, #f707c3 46.87%, #b61cc3 100%)',
+                'gradient-gold': 'linear-gradient(95deg, #D4D4D4 0%, #D2902E 63.41%, #E7C71A 100%)',
+                'gradient-gold-hover': 'linear-gradient(95deg, #D2902E 9.9%, #E7C71A 59.9%, #D4D4D4 96.35%)',
+                'gradient-silver': 'linear-gradient(95deg, #B8B8B8 0%, #3A3A3A 63.41%, #FCFCFC 100%)',
+                'gradient-silver-hover': 'linear-gradient(95deg, #3A3A3A 0%, #B8B8B8 72.92%, #FCFCFC 100%)',
             },
         },
     },

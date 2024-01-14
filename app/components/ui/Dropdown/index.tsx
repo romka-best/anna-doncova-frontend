@@ -10,14 +10,24 @@ import Checkbox from '../Checkbox';
 interface DropdownProps {
     className?: string;
     isMultiply?: boolean;
+    isRequired?: boolean;
     labelText: string;
     placeholderText: string;
     items: Array<string>;
     selectedItems: Array<string>;
-    onSelect: (items: Array<string>) => void;
+    onSelect: (items: Array<any>) => void;
 }
 
-export default function Dropdown({ className, labelText, placeholderText, items, isMultiply = false, selectedItems, onSelect }: DropdownProps) {
+export default function Dropdown({
+    className,
+    labelText,
+    placeholderText,
+    items,
+    isMultiply = false,
+    isRequired = true,
+    selectedItems,
+    onSelect,
+}: DropdownProps) {
     const dropdownRef = useRef<HTMLDivElement | null>(null);
 
     const [isOpen, setIsOpen] = useState(false);
@@ -27,14 +37,19 @@ export default function Dropdown({ className, labelText, placeholderText, items,
         if (selectedItems.includes(item)) {
             if (isMultiply) {
                 newSelectedItems = selectedItems.filter((selectedItem) => selectedItem !== item);
+            } else if (!isMultiply && isRequired) {
+                newSelectedItems = selectedItems;
+                setIsOpen(false);
             } else {
                 newSelectedItems = [];
+                setIsOpen(false);
             }
         } else {
             if (isMultiply) {
                 newSelectedItems = [...selectedItems, item];
             } else {
                 newSelectedItems = [item];
+                setIsOpen(false);
             }
         }
         onSelect(newSelectedItems);
@@ -97,18 +112,7 @@ export default function Dropdown({ className, labelText, placeholderText, items,
                                 animate="visible"
                                 exit="hidden"
                             >
-                                {isMultiply ? (
-                                    <Checkbox
-                                        className="px-6 py-3"
-                                        checked={selectedItems.includes(item)}
-                                        label={item}
-                                        onChange={() => handleItemClick(item)}
-                                    />
-                                ) : (
-                                    <p className="px-6 py-3" onClick={() => handleItemClick(item)}>
-                                        {item}
-                                    </p>
-                                )}
+                                <Checkbox className="px-6 py-3" checked={selectedItems.includes(item)} label={item} onChange={() => handleItemClick(item)} />
                             </motion.li>
                         ))}
                     </motion.ul>

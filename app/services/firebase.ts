@@ -1,4 +1,6 @@
+import * as process from 'process';
 import { initializeApp } from 'firebase/app';
+import { getRemoteConfig } from 'firebase/remote-config';
 
 const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -10,5 +12,8 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
+export const remoteConfig = getRemoteConfig(app);
+remoteConfig.settings.minimumFetchIntervalMillis = Number(process.env.NEXT_PUBLIC_FIREBASE_REMOTE_CONFIG_FETCH_INTERVAL);
 
 export default app;

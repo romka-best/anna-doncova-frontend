@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "anna-doncova-production"
+    "default": "anna-doncova-production",
+    "production": "anna-doncova-production",
+    "testing": "anna-doncova-testing"
   }
 }

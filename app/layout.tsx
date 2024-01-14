@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Unbounded } from 'next/font/google';
 
-import AnimationWrapper from 'components/AnimationWrapper';
+import AnimationWrapper from 'app/components/Common/AnimationWrapper';
 
 import './globals.css';
 

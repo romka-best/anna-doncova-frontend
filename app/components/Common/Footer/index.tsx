@@ -10,12 +10,12 @@ import ChevronIcon from 'public/icons/chevron.svg';
 export default function Footer() {
     return (
         <footer className="relative z-10 mx-24 mb-12 mt-24 flex flex-col gap-8 rounded-[2.5rem] bg-[#212121] p-12 lg:mx-16 sm:mx-10 sm:mt-[4.8rem] sm:gap-10 sm:p-[1.6rem]">
-            <Link href="/">
+            <Link href="/" aria-label="Перейти на главную страницу">
                 <Logo />
             </Link>
             <div className="flex justify-between lg:flex-col lg:gap-12">
                 <motion.a
-                    className="flex cursor-pointer items-center gap-6 rounded-[2.5rem] bg-[#393939] p-12 lg:w-max sm:w-full sm:p-[1.6rem]"
+                    className="flex cursor-pointer items-center gap-6 rounded-[2.5rem] bg-[#393939] p-12 lg:w-max sm:w-full sm:justify-between sm:p-[1.6rem]"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 10 }}
@@ -56,7 +56,7 @@ export default function Footer() {
                 </div>  */}
             </div>
             <div className="flex flex-col gap-6">
-                <p className="text-xs text-white">&copy;&nbsp;2023&nbsp;ИП Донцова А.В.</p>
+                <p className="text-xs text-white">&copy;&nbsp;2024&nbsp;ИП Донцова А.В.</p>
                 <p className="text-xs text-white">ИНН 026206137309</p>
                 <p className="text-xs text-white">ОГРНИП 31302800005960</p>
             </div>

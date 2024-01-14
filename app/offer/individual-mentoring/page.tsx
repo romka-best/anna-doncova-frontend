@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-import Header from 'components/Header';
-import Main from 'components/Main';
-import Footer from 'components/Footer';
+import Header from 'app/components/Common/Header';
+import Main from 'app/components/Common/Main';
+import Footer from 'app/components/Common/Footer';
 import AbstractOffer from '../components/AbstractOffer';
 import AbstractOfferSection from '../components/AbstractOffer/AbstractOfferSection';
 import AbstractOfferSectionItem from '../components/AbstractOffer/AbstractOfferSection/AbstractOfferSectionItem';

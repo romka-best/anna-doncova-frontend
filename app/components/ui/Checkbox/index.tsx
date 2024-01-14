@@ -19,7 +19,7 @@ export default function Checkbox({ className, checked, label, onChange }: Checkb
     );
 
     return (
-        <label className={cn('flex cursor-pointer gap-4', className)}>
+        <label className={cn('flex cursor-pointer items-center gap-4', className)}>
             <input className="hidden" type="checkbox" checked={checked} onChange={change} />
             <div className={cn('flex h-[2rem] min-w-[2rem] items-center justify-center rounded-lg', checked ? 'bg-gradient-pink' : 'border border-white')}>
                 {checked && <CheckIcon />}
