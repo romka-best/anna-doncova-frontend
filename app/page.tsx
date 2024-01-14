@@ -1,20 +1,11 @@
-import Analytics from 'components/Analytics';
-import Header from 'components/Header';
-import Main from 'components/Main';
-import Start from 'components/Start';
-import PreRegister from 'components/PreRegister';
-import Footer from 'components/Footer';
+import Analytics from 'app/components/Common/Analytics';
+import Home from 'components/Home';
 
-export default function Home() {
+export default function App() {
     return (
         <>
             <Analytics />
-            <Header />
-            <Main>
-                <Start />
-                <PreRegister />
-            </Main>
-            <Footer />
+            <Home />
         </>
     );
 }

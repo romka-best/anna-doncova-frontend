@@ -1,10 +1,10 @@
 import { PropsWithChildren } from 'react';
 
-interface AbstractOfferSectionProps extends PropsWithChildren {
+interface AbstractPrivacySectionProps extends PropsWithChildren {
     title: string;
 }
 
-const AbstractOfferSection = ({ title, children }: AbstractOfferSectionProps) => {
+const AbstractPrivacySection = ({ title, children }: AbstractPrivacySectionProps) => {
     return (
         <section>
             <h2 className="text-3xl text-white">{title}</h2>
@@ -13,4 +13,4 @@ const AbstractOfferSection = ({ title, children }: AbstractOfferSectionProps) =>
     );
 };
 
-export default AbstractOfferSection;
+export default AbstractPrivacySection;

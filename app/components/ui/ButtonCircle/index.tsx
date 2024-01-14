@@ -15,7 +15,7 @@ export default function ButtonCircle({ className, icon, onClick, children, ...re
             onClick={onClick}
             {...rest}
         >
-            <p className="z-10 text-lg font-semibold text-white sm:text-xs">{children}</p>
+            <p className="z-10 text-lg font-semibold uppercase text-white sm:text-xs">{children}</p>
             {icon}
         </button>
     );

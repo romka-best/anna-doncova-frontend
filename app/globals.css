@@ -70,8 +70,16 @@ select {
     margin: 1.3rem;
 }
 
-.fingerprint-icon_color_grey path {
+.fingerprint-icon_color_pink path {
     stroke: #f707c3;
+}
+
+.fingerprint-icon_color_gold path {
+    stroke: #D4D4D4;
+}
+
+.fingerprint-icon_color_silver path {
+    stroke: #B8B8B8;
 }
 
 .fingerprint-icon_color_white path {

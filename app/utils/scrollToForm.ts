@@ -1,8 +1,8 @@
 export default function scrollToForm() {
-    const preRegisterForm = document.getElementById('preRegisterForm');
+    const form = document.getElementById('form');
 
-    if (preRegisterForm) {
-        const topOffset = preRegisterForm.getBoundingClientRect().top + window.scrollY - 150;
+    if (form) {
+        const topOffset = form.getBoundingClientRect().top + window.scrollY - 150;
 
         window.scrollTo({
             top: topOffset,
